@@ -24,7 +24,7 @@ function setup() {
   imageMode(CENTER)
 }
 
-function mousePressed(){
+function mouseReleased(){
   print(playing)
   if(!playing){
     hs.play()
