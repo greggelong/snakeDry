@@ -8,8 +8,8 @@ let goal = 180
 let cnv
 function preload(){
   hs = loadSound("hds.mp3")
-  img = loadImage("hd.png")
-  snake = loadImage("snake.png")
+  img = loadImage("hds.png")
+  snake = loadImage("snakes.png")
 
 }
 
