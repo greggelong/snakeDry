@@ -27,6 +27,7 @@ function mouseClicked(){
   print(playing)
   if(!playing){
     hs.play()
+    hs.loop()
     playing = true
   } else{
     hs.stop()
