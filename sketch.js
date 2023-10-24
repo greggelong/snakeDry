@@ -1,4 +1,3 @@
-
 let hs
 let img
 let snake
@@ -24,7 +23,7 @@ function setup() {
   imageMode(CENTER)
 }
 
-function mouseReleased(){
+function mouseClicked(){
   print(playing)
   if(!playing){
     hs.play()
