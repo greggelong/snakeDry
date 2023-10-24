@@ -10,7 +10,7 @@ function preload(){
   hs = loadSound("hdss.mp3")
   img = loadImage("hds.png")
   snake = loadImage("snakes.png")
-  ss = loudSound("hiss.mp3")
+  ss = loadSound("hiss.mp3")
 
 }
 
