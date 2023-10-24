@@ -6,7 +6,7 @@ let angle =0
 let goal = 180
 let cnv
 function preload(){
-  hs = loadSound("hds.mp3")
+  hs = loadSound("hdss.mp3")
   img = loadImage("hds.png")
   snake = loadImage("snakes.png")
 
