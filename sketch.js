@@ -1,6 +1,7 @@
-let hs
-let img
-let snake
+let hs // hairdryer sound
+let ss // snake sound
+let img // hair dryer
+let snake // snake body
 let playing =false
 let angle =0
 let goal = 180
@@ -9,6 +10,7 @@ function preload(){
   hs = loadSound("hdss.mp3")
   img = loadImage("hds.png")
   snake = loadImage("snakes.png")
+  ss = loudSound("hiss.mp3")
 
 }
 
@@ -26,11 +28,13 @@ function setup() {
 function mouseClicked(){
   print(playing)
   if(!playing){
+    ss.play() // hiss when you start
     hs.play()
-    hs.loop()
+    hs.loop() // keep playing hair dryer
     playing = true
   } else{
     hs.stop()
+    ss.play() // hiss when you stop
     playing = false
   }
 }
@@ -63,6 +67,7 @@ function draw() {
 
   else if (angle === goal){
     goal=floor(random(360))
+    ss.play() // hiss when you reach your goal
 
   }
 }
