@@ -8,3 +8,5 @@ https://www.instagram.com/yuanredjade/
 
 
 - [] need to make a loading screen for all the assets 
+
+iphone is goofy about touches need to improve this interaction.
