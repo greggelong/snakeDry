@@ -6,6 +6,7 @@ let playing =false
 let angle =0
 let goal = 180
 let cnv
+let readyForNewTouch =true
 function preload(){
   hs = loadSound("hdss.mp3")
   img = loadImage("hds.png")
@@ -25,18 +26,26 @@ function setup() {
   imageMode(CENTER)
 }
 
-function mouseClicked(){
+function touchStarted(){   // for Ios
+
   print(playing)
-  if(!playing){
+  if(!playing && readyForNewTouch){
     ss.play() // hiss when you start
     hs.play()
     hs.loop() // keep playing hair dryer
     playing = true
-  } else{
+    readyForNewTouch= false
+  } else if(playing && readyForNewTouch){
     hs.stop()
     ss.play() // hiss when you stop
     playing = false
+    readyForNewTouch = false
   }
+ 
+}
+
+function touchEnded(){
+  readyForNewTouch = true
 }
 
 function draw() {
