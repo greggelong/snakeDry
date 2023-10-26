@@ -48,6 +48,10 @@ function touchEnded(){
   readyForNewTouch = true
 }
 
+function mousePressed(){
+  return false;
+}
+
 function draw() {
   background(0)
   push()
