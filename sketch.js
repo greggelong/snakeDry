@@ -49,7 +49,7 @@ function touchEnded(){
 }
 
 function mousePressed(){
-  return false;
+  touchStarted();
 }
 
 function draw() {
