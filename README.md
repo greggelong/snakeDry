@@ -28,3 +28,5 @@ for 1 add a debounce using time since last touch and 500 mili seconds
 for 2 was to have the mousePressed function call touch
 
 this seems to work will have to have someone test on Iphon for me I am 
+
+10/29/2023,  working and loading on ios, android and computer browsers
